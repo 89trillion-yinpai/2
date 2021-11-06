@@ -58,13 +58,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\C\ArrowController.cs" />
-     <Compile Include="Assets\Script\C\Duqu.cs" />
-     <Compile Include="Assets\Script\C\EnemyController.cs" />
-     <Compile Include="Assets\Script\C\PlayerController.cs" />
-     <Compile Include="Assets\Script\M\HumanBase.cs" />
-     <Compile Include="Assets\Script\M\HumanModel.cs" />
-     <None Include="Assets\Art\WW4_Effects_Sub\Effect\Soldier\FrostArcher\FrostArcher_effect\shader\Bingdong_vogeo.shader" />
+     <Compile Include="Assets\Function1\Scripts\Controller\ArrowController.cs" />
+     <Compile Include="Assets\Function1\Scripts\Controller\Duqu.cs" />
+     <Compile Include="Assets\Function1\Scripts\Controller\EnemyController.cs" />
+     <Compile Include="Assets\Function1\Scripts\Controller\PlayerController.cs" />
+     <Compile Include="Assets\Function1\Scripts\Model\HumanBase.cs" />
+     <Compile Include="Assets\Function1\Scripts\Model\HumanModel.cs" />
+     <None Include="Assets\Function1\Resources\WW4_Effects_Sub\Effect\Soldier\FrostArcher\FrostArcher_effect\shader\Bingdong_vogeo.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/yinpai/动画1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
