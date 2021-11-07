@@ -27,4 +27,5 @@
 | 动画控制脚本   |  控制玩家敌人和箭的动画   |
 | 血条控制脚本 |  控制血条的移动和数值变化  |
 
-![动画](https://user-images.githubusercontent.com/92706401/140603509-49eb8a99-cb9b-46cf-b6d5-847f9e5bf77f.png)
+
+![动画](https://user-images.githubusercontent.com/92706401/140639393-27be165a-3eee-484b-9f80-998e0244e740.png)
