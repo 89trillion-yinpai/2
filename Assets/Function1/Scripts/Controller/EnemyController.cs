@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class EnemyController : HumanBase
 {
     public Slider hpShowSlider;
-    
+
     private void Start()
     {
         //从配置表读取数据
@@ -33,22 +33,23 @@ public class EnemyController : HumanBase
     public void OnTriggerEnter(Collider other)
     {
         //箭才能触发事件
-        if(other.tag=="Arrow")
+        if (other.tag == "Arrow")
         {
             //计算伤害
-            CurrentHP -= (other.transform.GetComponent<ArrowController>().Damage-Defense);
+            CurrentHP -= (other.transform.GetComponent<ArrowController>().Damage - Defense);
 
             SetHPShow();
-            
+
             //死亡事件
-            if(CurrentHP<=0)
+            if (CurrentHP <= 0)
             {
                 CurrentHP = 0;
                 //销毁敌人实例
-                Destroy(this.gameObject); 
+                Destroy(this.gameObject);
                 //删除敌人血条
                 hpShowSlider.gameObject.SetActive(false);
             }
+
             //更新文字
             HPText.text = CurrentHP.ToString() + "/" + MaxHP.ToString();
         }

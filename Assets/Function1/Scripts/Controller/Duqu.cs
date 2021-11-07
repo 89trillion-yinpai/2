@@ -8,6 +8,7 @@ public class Duqu : MonoBehaviour
 {
     //单例模式
     private static Duqu instance;
+
     public static Duqu Instance()
     {
         return instance;
@@ -24,7 +25,8 @@ public class Duqu : MonoBehaviour
     private ITable2Data<HumanModel> humanModelTable;
     private List<HumanModel> humanModel;
 
-    private ITable2Data<HumanModel> HumanModelTable => humanModelTable ?? (humanModelTable = new TableManager<HumanModel>());
+    private ITable2Data<HumanModel> HumanModelTable =>
+        humanModelTable ?? (humanModelTable = new TableManager<HumanModel>());
 
     public List<HumanModel> GetHumanModel()
     {

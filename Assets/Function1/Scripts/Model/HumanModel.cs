@@ -19,10 +19,10 @@ namespace Model
         public int Atk;
         public int Def;
         public int ShootSpeed;
-       
+
         public override object Key()
         {
             return id;
-        }     
+        }
     }
 }

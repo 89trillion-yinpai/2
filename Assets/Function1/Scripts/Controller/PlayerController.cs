@@ -7,14 +7,16 @@ namespace Assets.Function1.Scripts.Controller
     {
         //声明箭的终点坐标，也就是敌人的坐标
         public Transform endTransform;
+
         //声明玩家
         public GameObject player;
+
         //声明箭
         public GameObject arrow;
 
         //动画状态机
         public Animator HeroAni;
-    
+
         private void Start()
         {
             //从配置表读取数据
@@ -24,7 +26,6 @@ namespace Assets.Function1.Scripts.Controller
             MaxHP = humanList[0].MaxHp;
             CurrentHP = humanList[0].MaxHp;
             Defense = humanList[0].Def;
-        
         }
 
         private void Update()
@@ -40,7 +41,7 @@ namespace Assets.Function1.Scripts.Controller
                 HeroAni.Play("Run");
             }
             //松开"R"播放初始状态动画
-            else if(Input.GetKeyUp(KeyCode.R))
+            else if (Input.GetKeyUp(KeyCode.R))
             {
                 HeroAni.SetTrigger("lde");
             }
@@ -52,13 +53,12 @@ namespace Assets.Function1.Scripts.Controller
         }
 
         //射箭回调函数 攻击动画事件触发
-        public  void AnimationCallBack()
+        public void AnimationCallBack()
         {
             //生成箭的实例
             GameObject go = GameObject.Instantiate(arrow);
             //箭生成的位置在玩家面前
-            go.transform.position = player.transform.position + new Vector3(0,5f,6f);
-            
+            go.transform.position = player.transform.position + new Vector3(0, 5f, 6f);
         }
     }
 }

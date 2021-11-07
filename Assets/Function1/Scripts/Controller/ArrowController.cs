@@ -13,28 +13,16 @@ public class ArrowController : MonoBehaviour
 
     public float Speed
     {
-        get
-        {
-            return speed;
-        }
+        get { return speed; }
 
-        set
-        {
-            speed = value;
-        }
+        set { speed = value; }
     }
 
     public float Damage
     {
-        get
-        {
-            return damage;
-        }
+        get { return damage; }
 
-        set
-        {
-            damage = value;
-        }
+        set { damage = value; }
     }
 
     //每次攻击结束后销毁箭
@@ -46,6 +34,6 @@ public class ArrowController : MonoBehaviour
     void Update()
     {
         //箭攻击方向
-        transform.Translate((Vector3.forward + new  Vector3(90,0,0)) * Time.deltaTime * 2f );
+        transform.Translate((Vector3.forward + new Vector3(90, 0, 0)) * Time.deltaTime * 2f);
     }
 }
