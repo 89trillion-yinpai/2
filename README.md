@@ -7,17 +7,31 @@
 - 5:读取csv文件实现相应功能并测试
 
 ## 目录结构
-- -Function1
-- -—Animation—动画状态机和动画
-- -—Prefabs—存储预制物
-- -—Scenes—存储场景
-- -—Resources—存储CSV资源
-- -—Script—存储编写的脚本
+
+```
+├── Readme.md              #技术文档                    
+├── config                     
+│   ├── SimpleScence       #场景
+├── internal
+│   ├── GameModelManager   #读取配置文件
+│   ├── PlayerPrefab       #自己
+│   ├── EnemyPrefab        #敌人
+│   ├── canvans	
+│   |    ├── PlayerSlider  #自己血条
+│   |    ├── EnemySlider   #敌人血条
+
+
+```
 
 ## 预制物
 - 1:敌人
 - 2：玩家
 - 3:箭
+
+## 第三方库
+- 1： ParseCSV:解析CSA数据
+
+
 
 ##代码结构
 | 需要的脚本       |     实现的功能 |
